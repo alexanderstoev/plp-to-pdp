@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/plp-to-pdp/static/css/main.88357d13.css",
+    "main.js": "/plp-to-pdp/static/js/main.beadaa32.js",
+    "index.html": "/plp-to-pdp/index.html",
+    "main.88357d13.css.map": "/plp-to-pdp/static/css/main.88357d13.css.map",
+    "main.beadaa32.js.map": "/plp-to-pdp/static/js/main.beadaa32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88357d13.css",
+    "static/js/main.beadaa32.js"
+  ]
+}

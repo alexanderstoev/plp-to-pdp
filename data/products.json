@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Black Nikies",
+    "price": 459.99,
+    "image": "/images/p1.jpg",
+    "color": "blue"
+  },
+  {
+    "name": "Red sports",
+    "price": 970.5,
+    "image": "/images/p2.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Colorful heels",
+    "price": 970.5,
+    "image": "/images/p3.jpg",
+    "color": "gray"
+  },
+  {
+    "name": "Sport shoes",
+    "price": 130,
+    "image": "/images/p4_500.jpg",
+    "color": "green"
+  }
+]
