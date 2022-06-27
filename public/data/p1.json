@@ -1,7 +1,7 @@
 {
   "name": "Black Nikies product",
   "price": 459.99,
-  "image": "/images/p1.jpg",
+  "image": "./images/p1.jpg",
   "color": "blue",
   "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequuntur impedit sunt rerum error cumque excepturi culpa tempore vero! Eaque consectetur doloremque, ipsum rerum, accusantium fuga debitis vero officia dolor corrupti nesciunt adipisci quae excepturi cum corporis? Perferendis unde possimus, reprehenderit consequuntur non ut, hic, deleniti nulla culpa eaque blanditiis."
 }
