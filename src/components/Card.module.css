@@ -1,0 +1,137 @@
+:root {
+  --border-radius: 2.5rem;
+  --card-size: 25rem;
+  --image-size: calc(var(--card-size) - (var(--border-radius) * 2));
+  --image-size-expanded: 40rem;
+  --image-offset: 2.5rem;
+
+  --anim-speed: 250ms;
+}
+
+.card {
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding-top: calc(var(--image-size) - var(--image-offset) / 2);
+  width: var(--card-size);
+  height: var(--card-size);
+  border-radius: var(--border-radius);
+  position: relative;
+  opacity: 1;
+  margin: 2rem;
+  transition: var(--anim-speed) linear;
+  /* transition: transform var(--anim-speed) linear 0ms,
+    opacity var(--anim-speed) linear 0ms, width var(--anim-speed) linear 0ms, height var(--anim-speed) linear 0ms; */
+}
+
+.cardImage {
+  width: var(--image-size);
+  height: var(--image-size);
+  object-fit: cover;
+  position: absolute;
+  left: calc(50% - (var(--image-size) / 2));
+  top: calc(0rem - var(--image-offset));
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  transition: var(--anim-speed) linear 0ms;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+  cursor: pointer;
+}
+.description,
+.addToBag {
+  display: none;
+  transition: var(--anim-speed) linear 0ms;
+}
+.price {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  transform: translateY(-100%);
+  transition: transform var(--anim-speed) linear 0ms,
+    opacity var(--anim-speed) linear 0ms, width var(--anim-speed) linear 0ms;
+}
+
+.hidden.down {
+  transform: translateY(100%);
+}
+
+.expanded {
+  width: calc(100% - 4rem); /*4rem = 2 * 2rem the padding of the <main /> */
+  height: 900px;
+  /* transition: width var(--anim-speed) linear 0ms,  height var(--anim-speed) linear 0ms; */
+  transition: var(--anim-speed) linear;
+  padding-top: 2rem;
+  padding-left: calc(var(--image-size-expanded) + var(--border-radius) * 2);
+  text-align: left;
+}
+
+.expanded .cardImage {
+  left: var(--border-radius);
+  width: var(--image-size-expanded);
+  height: var(--image-size-expanded);
+}
+
+.expanded .description,
+.expanded .addToBag {
+  display: block;
+}
+button {
+  padding: 1em 2em;
+  border-radius: 0.75em;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1rem;
+  box-shadow: 0px 0px 3px 0px rgba(246, 246, 246, 1) !important;
+}
+
+select {
+  padding: 1em 2em;
+  border-radius: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1rem;
+  box-shadow: 0px 0px 3px 0px rgba(246, 246, 246, 1) !important;
+}
+
+.gray {
+  color: #dadada;
+  background: #212121;
+  border-color: #212121;
+  background: linear-gradient(145deg, #212121 0%, #616161 100%);
+  box-shadow: 0px 0px 6rem 0px rgba(68, 68, 68, 0.724);
+}
+
+.blue {
+  color: #a1daf8;
+  background: #1d3260;
+  border-color: #1d3260;
+  background: linear-gradient(145deg, #1d3260 0%, #2370a5 100%);
+  box-shadow: 0px 0px 6rem 0px #1d3260b0;
+}
+
+.red {
+  color: #ffdba7;
+  background: #c11429;
+  border-color: #c11429;
+  background: linear-gradient(145deg, #c11429 0%, #d4565d 100%);
+  box-shadow: 0px 0px 6rem 0px #c114288d;
+}
+
+.green {
+  color: #f1fea0;
+  background: #274831;
+  border-color: #274831;
+  background: linear-gradient(145deg, #274831 0%, #73a85f 100%);
+  box-shadow: 0px 0px 6rem 0px #274831b2;
+}
