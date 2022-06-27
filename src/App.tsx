@@ -78,7 +78,12 @@ function App() {
           />
         ))}
       </main>
-      <footer>Github:</footer>
+      <footer>
+        Github:{" "}
+        <a href="https://github.com/alexanderstoev/plp-to-pdp" target="_blank">
+          https://github.com/alexanderstoev/plp-to-pdp
+        </a>
+      </footer>
     </div>
   );
 }
